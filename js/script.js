@@ -170,6 +170,16 @@ function clicarResultado()
 function clicarRandom()
 {
     let random = Math.floor(Math.random() * ((1000000 + 1) + 0));
-    inputResultado.value = random;
-    calculo.valorSalvo = random;
+    //Se o valor for zero, substitui o valor do visor pelo número clicado
+    if(inputResultado.value == 0)
+    {
+        inputResultado.value = random;
+        //Senão adiciona o número aos dígitos no visor
+    }
+    else
+    {
+        inputResultado.value += random;
+    }
+    //inputResultado.value = random;
+    //calculo.valorSalvo = random;
 }
