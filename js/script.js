@@ -181,5 +181,4 @@ function clicarRandom()
         inputResultado.value += random;
     }
     //inputResultado.value = random;
-    //calculo.valorSalvo = random;
 }
